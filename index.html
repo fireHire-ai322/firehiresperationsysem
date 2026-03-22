@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FireHire Automation Solutions | عرض سعر</title>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --primary: #0066cc;
+            --secondary: #2d3436;
+            --accent: #00cec9;
+            --bg: #f9fbfd;
+            --white: #ffffff;
+            --shadow: 0 10px 30px rgba(0,0,0,0.05);
+        }
+
+        body {
+            font-family: 'Tajawal', sans-serif;
+            background-color: var(--bg);
+            margin: 0;
+            padding: 40px 20px;
+            color: var(--secondary);
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+            margin: 0 auto;
+        }
+
+        .header {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .logo {
+            max-width: 180px;
+            margin-bottom: 20px;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            color: var(--primary);
+            margin: 0;
+        }
+
+        .header p {
+            color: #636e72;
+            font-size: 16px;
+        }
+
+        .pricing-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+            gap: 30px;
+            margin-top: 40px;
+        }
+
+        .card {
+            background: var(--white);
+            border-radius: 20px;
+            padding: 40px;
+            box-shadow: var(--shadow);
+            border: 1px solid #edf2f7;
+            transition: transform 0.3s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .card:hover {
+            transform: translateY(-5px);
+        }
+
+        .card.featured {
+            border: 2px solid var(--primary);
+        }
+
+        .badge {
+            position: absolute;
+            top: 20px;
+            left: -35px;
+            background: var(--primary);
+            color: white;
+            padding: 5px 40px;
+            transform: rotate(-45deg);
+            font-size: 12px;
+            font-weight: bold;
+        }
+
+        .card h2 {
+            font-size: 22px;
+            margin-top: 0;
+            color: var(--primary);
+        }
+
+        .price {
+            font-size: 36px;
+            font-weight: 700;
+            margin: 20px 0;
+            color: var(--secondary);
+        }
+
+        .price span {
+            font-size: 16px;
+            color: #636e72;
+            font-weight: 400;
+        }
+
+        .features {
+            list-style: none;
+            padding: 0;
+            margin: 30px 0;
+        }
+
+        .features li {
+            margin-bottom: 15px;
+            display: flex;
+            align-items: center;
+            font-size: 15px;
+        }
+
+        .features li::before {
+            content: "✓";
+            color: #00b894;
+            font-weight: bold;
+            margin-left: 10px;
+            background: #e6faf5;
+            width: 20px;
+            height: 20px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            border-radius: 50%;
+            font-size: 12px;
+        }
+
+        .btn {
+            display: block;
+            text-align: center;
+            background: var(--primary);
+            color: white;
+            text-decoration: none;
+            padding: 15px;
+            border-radius: 10px;
+            font-weight: 700;
+            transition: background 0.3s ease;
+        }
+
+        .btn-outline {
+            background: transparent;
+            border: 2px solid var(--primary);
+            color: var(--primary);
+        }
+
+        .btn:hover {
+            opacity: 0.9;
+        }
+
+        .footer-note {
+            text-align: center;
+            margin-top: 50px;
+            font-size: 14px;
+            color: #b2bec3;
+        }
+
+        @media (max-width: 600px) {
+            .pricing-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="container">
+    <div class="header">
+        <img src="https://i.ibb.co/6RzHZxrx/1772117856988-removebg-preview.png" alt="FireHire Logo" class="logo">
+        <h1>حلول الأتمتة الذكية للشركات</h1>
+        <p>استثمر في التكنولوجيا التي توفر وقتك وتزيد أرباحك</p>
+    </div>
+
+    <div class="pricing-grid">
+        <div class="card">
+            <h2>الباقة الاحترافية (Professional ATS)</h2>
+            <p style="color:#636e72; font-size: 14px;">مثالية للشركات المتوسطة والباحثين عن التنظيم.</p>
+            <div class="price">20,000 <span>ج.م / تأسيس</span></div>
+            <ul class="features">
+                <li>نظام Google Sheets مؤتمت بالكامل.</li>
+                <li>لوحة تحكم (Dashboard) لمتابعة الأداء لحظياً.</li>
+                <li>تقارير PDF تلقائية لتقييم الموظفين والنتائج.</li>
+                <li>إحصائيات دقيقة لعدد الـ Leads والتحويلات.</li>
+                <li>أتمتة المواعيد والردود الذكية.</li>
+            </ul>
+            <p style="font-size: 13px; color: #636e72;">* تحديثات اختيارية عند الطلب بـ 3,000 ج.م</p>
+            <a href="https://wa.me/رقم-موبايلك" class="btn btn-outline">اطلب هذه الباقة</a>
+        </div>
+
+        <div class="card featured">
+            <div class="badge">الأكثر طلباً</div>
+            <h2>الباقة المتكاملة (Enterprise Ecosystem)</h2>
+            <p style="color:#636e72; font-size: 14px;">نظام مؤسسي شامل مع واجهة ويب خاصة.</p>
+            <div class="price">25,000 <span>ج.م / تأسيس</span></div>
+            <ul class="features">
+                <li><b>موقع إلكتروني خاص (Web Portal)</b> للشركة.</li>
+                <li>لوحة تحكم مركزية شاملة للمديرين والموظفين.</li>
+                <li>تخصيص كامل (Full Customization) حسب الهوية.</li>
+                <li>كل مميزات الباقة الاحترافية مشمولة.</li>
+                <li>دعم فني وتحديثات مجانية لأول 3 شهور.</li>
+            </ul>
+            <a href="https://wa.me/رقم-موبايلك" class="btn">احصل على النظام الكامل</a>
+        </div>
+    </div>
+
+    <div class="footer-note">
+        جميع الحقوق محفوظة © 2026 - FireHire Automation Solutions
+    </div>
+</div>
+
+</body>
+</html>
